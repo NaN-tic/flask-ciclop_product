@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, current_app, abort, g, url_for, \
     session, request
 from ciclop.tryton import tryton
 from ciclop.helpers import login_required
-from flask.ext.babel import gettext as _
+from flask_babel import gettext as _
 
 product = Blueprint('product', __name__, template_folder='templates')
 
